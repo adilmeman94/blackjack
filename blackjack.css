@@ -1,0 +1,238 @@
+:root {
+  height: 100%;
+}
+
+body {
+  background: blueviolet;
+  min-height: 100%;
+}
+
+#table {
+  position: relative;
+  padding-top: 20px;
+}
+
+#dealer {
+  box-sizing: border-box;
+  padding-left: 154px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  height: 214px;
+  position: relative;
+  width: 100%;
+}
+
+#deck {
+  top: 55px;
+  left: 15px;
+  z-index: 10;
+  position: absolute;
+  width: 120px;
+  height: 180px;
+  border-radius: 5px;
+  padding: 2px;
+  background-color: #f6f7eb;
+  display: block;
+  box-shadow: 2px -2px 9px -1px black;
+}
+
+.card {
+  font-family: "Arbutus Slab", serif;
+  position: relative;
+  width: 120px;
+  height: 180px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 28px;
+  padding: 2px;
+  background-color: #f6f7eb;
+  display: flex;
+  box-shadow: black;
+  margin: 15px;
+}
+
+.back {
+  background: linear-gradient(115deg, transparent 75%, white 75%) 0 0,
+    linear-gradient(245deg, transparent 75%, white 75%) 0 0,
+    linear-gradient(115deg, transparent 75%, white 75%) 7px -15px,
+    linear-gradient(245deg, transparent 75%, white 75%) 7px -15px, blue;
+  background-size: 15px 30px;
+  width: 96%;
+  height: 98%;
+  margin: 1% auto;
+  border-radius: 5px;
+}
+
+.diamonds,
+.hearts {
+  color: #e94f37;
+}
+
+.spades,
+.clubs {
+  color: #393e41;
+}
+
+.rank {
+  position: absolute;
+  width: 30px;
+  height: 28px;
+}
+
+.top {
+  top: 2px;
+  left: 2px;
+}
+
+.bottom {
+  bottom: 0;
+  right: 2px;
+  text-align: right;
+}
+
+.suit {
+  margin: auto;
+  font-size: 60px;
+}
+
+.border-line {
+  border: 4px dashed white;
+  opacity: 0.8;
+  margin: 20px 0;
+}
+.score {
+  position: relative;
+  text-align: center;
+  font-family: Gill Sans;
+  color: white;
+  opacity: 0.8;
+  font-size: 20px;
+  z-index: 10;
+  text-shadow: 1px 1px 2px black;
+}
+
+.score1 {
+  display: inline;
+  position: relative;
+  margin-left: 10%;
+  font-family: Gill Sans;
+  color: white;
+  opacity: 0.8;
+  font-size: 20px;
+  z-index: 10;
+  text-shadow: 1px 1px 2px black;
+}
+.score2 {
+  display: inline;
+  position: relative;
+  margin-left: 35%;
+  font-family: Gill Sans;
+  color: white;
+  opacity: 0.8;
+  font-size: 20px;
+  z-index: 10;
+  text-shadow: 1px 1px 2px black;
+}
+
+/* footer */
+#panel {
+  text-align: center;
+  background-color: #40434e;
+  border-top: 1px solid #070707;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 10px;
+}
+
+#status {
+  font-family: Gill Sans;
+  text-shadow: 1px 1px 2px black;
+  color: #55acee;
+  position: relative;
+  opacity: 0.7;
+  font-size: 20px;
+}
+
+/* buttons */
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 20px;
+  color: #f6f7eb;
+  position: relative;
+  display: inline-block;
+  font-family: Gill Sans;
+  text-shadow: 1px 1px 2px black;
+}
+
+button:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 0.5px 0px 0px;
+}
+
+.blue {
+  background-color: #55acee;
+  box-shadow: 0px 5px 0px 0px #3c93d5;
+}
+
+.blue:hover {
+  background-color: #6fc6ff;
+}
+
+.green {
+  background-color: #2ecc71;
+  box-shadow: 0px 5px 0px 0px #15b358;
+}
+
+.green:hover {
+  background-color: #48e68b;
+}
+
+.red {
+  background-color: #e74c3c;
+  box-shadow: 0px 5px 0px 0px #ce3323;
+}
+
+.red:hover {
+  background-color: #ff6656;
+}
+.black {
+  background-color: #000000;
+  box-shadow: 0px 5px 0px 0px #1b1a1a;
+}
+.black:hover {
+  background-color: #383636;
+}
+
+.yellow {
+  background-color: #f5e50e;
+  box-shadow: 0px 5px 0px 0px #f7b80e;
+}
+.yellow:hover {
+  background-color: #b8b521;
+}
+
+button:disabled {
+  background-color: #999;
+  box-shadow: 0px 5px 0px 0px #aaa;
+}
+
+button:disabled:hover {
+  background-color: #999;
+}
+
+button:disabled:active {
+  transform: translate(0px, 0px);
+  -webkit-transform: translate(0px, 0px);
+  box-shadow: 0px 5px 0px 0px #aaa;
+}
